@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're In — Agent Blueprint</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: { gray: { 950: '#030712' } }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-up { animation: fadeUp 0.6s ease both; }
+    .fade-up-2 { animation: fadeUp 0.6s 0.15s ease both; }
+    .fade-up-3 { animation: fadeUp 0.6s 0.3s ease both; }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased min-h-screen flex flex-col items-center justify-center px-4">
+
+  <div class="max-w-lg w-full text-center">
+
+    <!-- Icon -->
+    <div class="fade-up w-24 h-24 rounded-3xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-8">
+      <span class="text-5xl">✅</span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="fade-up-2 text-4xl sm:text-5xl font-black text-white mb-4 leading-tight">
+      You're in.
+    </h1>
+
+    <!-- Subheading -->
+    <p class="fade-up-2 text-xl text-emerald-400 font-semibold mb-8">
+      Your blueprint session is being scheduled.
+    </p>
+
+    <!-- Body -->
+    <div class="fade-up-3 bg-gray-900 border border-white/5 rounded-2xl p-8 text-left space-y-5 mb-10">
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+          <span class="text-lg">📧</span>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-1">Check your email</p>
+          <p class="text-gray-400 text-sm leading-relaxed">A calendar invite and intake form are on their way. Fill out the form before your session so we can start building immediately.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+          <span class="text-lg">⏱️</span>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-1">Sessions available within 3–5 days</p>
+          <p class="text-gray-400 text-sm leading-relaxed">Pick a time that works for you. We'll be live for 90 minutes — your system will be running before we hang up.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center flex-shrink-0">
+          <span class="text-lg">🤖</span>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-1">Your agents are being prepped</p>
+          <p class="text-gray-400 text-sm leading-relaxed">Based on your intake form, I'll have a draft architecture ready before we start. We'll refine it together live.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back link -->
+    <a href="/" class="fade-up-3 inline-flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-colors duration-150 text-sm">
+      ← Back to Agent Blueprint
+    </a>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="fixed bottom-0 left-0 right-0 border-t border-white/5 py-4 text-center">
+    <span class="text-gray-600 text-xs">© 2026 SpiritTree · Agent Blueprint</span>
+  </footer>
+
+</body>
+</html>

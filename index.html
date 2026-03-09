@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agent Blueprint — Multi-Agent AI Systems in 90 Minutes</title>
+  <meta name="description" content="Stop using AI manually. Get a custom multi-agent system installed and running in 90 minutes. Book your Agent Blueprint session today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'sans-serif'] },
+          colors: {
+            gray: {
+              950: '#030712',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-gradient {
+      background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(16,185,129,0.15) 0%, transparent 70%),
+                  linear-gradient(to bottom, #030712, #111827);
+    }
+    .card-glow:hover {
+      box-shadow: 0 0 0 1px rgba(16,185,129,0.3), 0 4px 32px rgba(16,185,129,0.08);
+    }
+    .faq-content {
+      display: none;
+      overflow: hidden;
+    }
+    .faq-item.open .faq-content {
+      display: block;
+    }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+    }
+    .faq-chevron { transition: transform 0.2s ease; }
+    .popular-glow {
+      box-shadow: 0 0 0 1px rgba(16,185,129,0.5), 0 8px 40px rgba(16,185,129,0.12);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-white/5 backdrop-blur-md bg-gray-950/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <span class="font-bold text-white tracking-tight">Agent Blueprint<span class="text-emerald-500">.</span></span>
+      <a href="#pricing" class="hidden sm:inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-semibold text-sm px-4 py-2 rounded-lg transition-colors duration-150">
+        Book a Session
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero-gradient pt-32 pb-24 px-4 sm:px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 text-emerald-400 text-sm font-medium mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        Live sessions available this week
+      </div>
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
+        Stop Using AI<br />
+        <span class="text-emerald-500">Manually.</span>
+      </h1>
+      <p class="text-xl sm:text-2xl text-gray-400 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
+        Get a custom multi-agent system installed and running in <span class="text-white font-semibold">90 minutes</span>. Built for your workflow. No fluff, no theory — just working infrastructure.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <a href="#pricing" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-lg px-8 py-4 rounded-xl transition-all duration-150 shadow-lg shadow-emerald-500/20">
+          Book Your Session →
+        </a>
+        <a href="#how-it-works" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-white/10 hover:border-white/20 text-gray-300 hover:text-white font-semibold text-lg px-8 py-4 rounded-xl transition-colors duration-150">
+          See How It Works
+        </a>
+      </div>
+      <p class="mt-6 text-gray-500 text-sm">100% satisfaction guarantee · Results in your first session</p>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="py-20 px-4 sm:px-6 bg-gray-900/40">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">You're leaving money on the table</h2>
+        <p class="text-gray-400 text-lg max-w-xl mx-auto">Most people use AI like a search engine. That's why they're not seeing the productivity gains they expected.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-8 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">🔄</div>
+          <h3 class="text-white font-bold text-lg mb-3">Copy-paste hell</h3>
+          <p class="text-gray-400 leading-relaxed">You're manually moving outputs between tools, reformatting, prompting one step at a time. Every task takes 10x longer than it should.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-8 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">🧠</div>
+          <h3 class="text-white font-bold text-lg mb-3">No persistent memory</h3>
+          <p class="text-gray-400 leading-relaxed">Every session starts from scratch. Your AI doesn't know your preferences, your projects, or your voice. You're re-explaining yourself constantly.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-8 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">🤹</div>
+          <h3 class="text-white font-bold text-lg mb-3">Tool overload, zero flow</h3>
+          <p class="text-gray-400 leading-relaxed">ChatGPT, Claude, Perplexity, Notion AI — you're juggling a dozen disconnected tools that don't talk to each other. It's chaos, not leverage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="py-20 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">What you walk away with</h2>
+        <p class="text-gray-400 text-lg max-w-xl mx-auto">Every Blueprint session delivers a complete, working system — not a strategy doc.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-7 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">🤖</div>
+          <h3 class="text-white font-semibold text-lg mb-2">Multi-agent architecture</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Purpose-built agents with defined roles: researcher, writer, coder, ops. Each one knows its job and hands off cleanly.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-7 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">💾</div>
+          <h3 class="text-white font-semibold text-lg mb-2">Persistent memory layer</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Structured context files your agents read every session. No more re-explaining. Your preferences compound over time.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-7 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">⚡</div>
+          <h3 class="text-white font-semibold text-lg mb-2">Automated workflows</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Trigger chains that run on schedule or on-demand. Research → write → publish without you touching it.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-7 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">🎯</div>
+          <h3 class="text-white font-semibold text-lg mb-2">Custom prompt library</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Battle-tested prompts tuned to your voice, industry, and goals. Consistent outputs without consistent effort.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-7 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">🔗</div>
+          <h3 class="text-white font-semibold text-lg mb-2">Tool integrations</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Connect your existing stack. Telegram, Notion, GitHub, Slack — your agents live where you already work.</p>
+        </div>
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-7 card-glow transition-all duration-200">
+          <div class="text-3xl mb-4">📖</div>
+          <h3 class="text-white font-semibold text-lg mb-2">Operator runbook</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Plain-language docs so you (or your team) can run, extend, and iterate on the system without me in the loop.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="py-20 px-4 sm:px-6 bg-gray-900/40">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">How it works</h2>
+        <p class="text-gray-400 text-lg">Three steps from zero to running system.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-8 relative">
+        <!-- connector line (desktop only) -->
+        <div class="hidden sm:block absolute top-10 left-[calc(16.67%+16px)] right-[calc(16.67%+16px)] h-px bg-gradient-to-r from-transparent via-emerald-500/30 to-transparent"></div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-6 relative z-10">
+            <span class="text-emerald-400 font-black text-2xl">1</span>
+          </div>
+          <h3 class="text-white font-bold text-xl mb-3">Book</h3>
+          <p class="text-gray-400 leading-relaxed">Pick your tier, complete checkout. You'll get a calendar link instantly. Fill out a short intake form so I can prep your system before we start.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-6 relative z-10">
+            <span class="text-emerald-400 font-black text-2xl">2</span>
+          </div>
+          <h3 class="text-white font-bold text-xl mb-3">Build</h3>
+          <p class="text-gray-400 leading-relaxed">90-minute live session. We install, configure, and test your multi-agent system together. You watch, learn, and steer direction in real time.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-20 h-20 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-6 relative z-10">
+            <span class="text-emerald-400 font-black text-2xl">3</span>
+          </div>
+          <h3 class="text-white font-bold text-xl mb-3">Ship</h3>
+          <p class="text-gray-400 leading-relaxed">Walk away with a live system, your runbook, and a follow-up async check-in. You're running multi-agent ops the same day.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="py-20 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Pick your blueprint</h2>
+        <p class="text-gray-400 text-lg max-w-xl mx-auto">All tiers include a live 90-minute session and working deliverables. No retainers, no subscriptions.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-8 items-start">
+
+        <!-- Entry -->
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-8 card-glow transition-all duration-200">
+          <div class="mb-6">
+            <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Entry</p>
+            <div class="flex items-end gap-2 mb-4">
+              <span class="text-5xl font-black text-white">$497</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">Perfect for solopreneurs and creators who want a working AI system fast — without the complexity.</p>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              90-minute live build session
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              2-agent system (research + writing)
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Memory layer setup
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Custom prompt library (10 prompts)
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Operator runbook
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              48-hr async follow-up
+            </li>
+          </ul>
+          <a href="https://buy.stripe.com/fZu8wI4yMfrPe0v4Sr2Nq04" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 border border-white/10 hover:border-white/20 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-150">
+            Get Started →
+          </a>
+        </div>
+
+        <!-- Premium (POPULAR) -->
+        <div class="bg-gray-900 border border-emerald-500/30 rounded-2xl p-8 popular-glow relative lg:-mt-4 lg:pb-12">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+            <span class="bg-emerald-500 text-gray-950 text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full">Most Popular</span>
+          </div>
+          <div class="mb-6">
+            <p class="text-emerald-400 text-sm font-semibold uppercase tracking-wider mb-2">Premium</p>
+            <div class="flex items-end gap-2 mb-4">
+              <span class="text-5xl font-black text-white">$997</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">For operators who want a full swarm: multiple agents, automations, and integrations with your existing tools.</p>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              90-minute live build session
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              4-agent swarm (custom roles)
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Advanced memory + context architecture
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              3 automated workflow pipelines
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Tool integrations (Telegram, Notion, GitHub)
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Custom prompt library (30 prompts)
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Full operator runbook
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              7-day async support
+            </li>
+          </ul>
+          <a href="https://buy.stripe.com/7sY00c7KY93rg8D5Wv2Nq05" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold px-6 py-3.5 rounded-xl transition-all duration-150 shadow-lg shadow-emerald-500/25">
+            Book Premium →
+          </a>
+        </div>
+
+        <!-- Full Deploy -->
+        <div class="bg-gray-900 border border-white/5 rounded-2xl p-8 card-glow transition-all duration-200">
+          <div class="mb-6">
+            <p class="text-gray-400 text-sm font-semibold uppercase tracking-wider mb-2">Full Deploy</p>
+            <div class="flex items-end gap-2 mb-4">
+              <span class="text-5xl font-black text-white">$1,997</span>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">The full-stack build for teams and serious operators. Everything in Premium, plus a second session and deeper integrations.</p>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              2× 90-minute build sessions
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Full agent swarm (unlimited roles)
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Everything in Premium
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Custom agent personas + voice
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              End-to-end content pipeline
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Team onboarding docs
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              30-day async support
+            </li>
+            <li class="flex items-start gap-3 text-sm text-gray-300">
+              <span class="text-emerald-500 mt-0.5 flex-shrink-0">✓</span>
+              Priority scheduling
+            </li>
+          </ul>
+          <a href="https://buy.stripe.com/8x228k5CQ2F34pV84D2Nq06" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center bg-gray-800 hover:bg-gray-700 border border-white/10 hover:border-white/20 text-white font-semibold px-6 py-3.5 rounded-xl transition-all duration-150">
+            Book Full Deploy →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 px-4 sm:px-6 bg-gray-900/40">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-14">
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Questions</h2>
+        <p class="text-gray-400 text-lg">The ones people usually ask.</p>
+      </div>
+      <div class="space-y-3">
+
+        <div class="faq-item bg-gray-900 border border-white/5 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-semibold">Do I need technical experience?</span>
+            <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="px-6 pb-5 text-gray-400 leading-relaxed">No. If you can use a terminal and edit a text file, you have enough. Most of the heavy lifting happens live, with me guiding you through every step. We build it together, and I explain what everything does so you can run it yourself after.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-white/5 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-semibold">What tools does this use?</span>
+            <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="px-6 pb-5 text-gray-400 leading-relaxed">We build primarily on OpenClaw (multi-agent orchestration), Claude (Anthropic), and your existing tools. The system is designed to integrate with Telegram, Notion, GitHub, Slack, and other common platforms. You own the entire stack — no vendor lock-in.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-white/5 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-semibold">What if I'm not satisfied?</span>
+            <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="px-6 pb-5 text-gray-400 leading-relaxed">If we complete the session and you don't have a working system, we schedule a follow-up at no charge until it's right. I'm not interested in taking money for something that doesn't work for you.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-white/5 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-semibold">Can this work for my team?</span>
+            <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="px-6 pb-5 text-gray-400 leading-relaxed">Yes. The Full Deploy tier includes team onboarding documentation and is designed for small teams (2–8 people). Each team member gets a configured environment and understands how to use the shared agent infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-gray-900 border border-white/5 rounded-xl overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full flex items-center justify-between px-6 py-5 text-left">
+            <span class="text-white font-semibold">How soon can I book?</span>
+            <svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content">
+            <p class="px-6 pb-5 text-gray-400 leading-relaxed">Sessions are typically available within 3–5 business days. After checkout, you'll receive a calendar link to schedule at a time that works for you. Fill out the intake form before the session so we can start building immediately.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section class="py-24 px-4 sm:px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <div class="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mx-auto mb-8">
+        <span class="text-3xl">🚀</span>
+      </div>
+      <h2 class="text-4xl sm:text-5xl font-black text-white mb-6 leading-tight">
+        Ready to 10x your output?
+      </h2>
+      <p class="text-gray-400 text-xl mb-10 leading-relaxed">
+        Stop copy-pasting. Stop context-switching. Get a system that works while you sleep.
+      </p>
+      <a href="#pricing" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-xl px-10 py-5 rounded-2xl transition-all duration-150 shadow-xl shadow-emerald-500/20">
+        Book Your Session Now →
+      </a>
+      <p class="mt-6 text-gray-500 text-sm">90 minutes. Working system. Same day.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-8 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
+      <span>© 2026 SpiritTree · Agent Blueprint</span>
+      <span>blueprint.spirittree.dev</span>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      item.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
