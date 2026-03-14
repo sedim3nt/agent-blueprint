@@ -23,6 +23,15 @@
     .hero-gradient {
       background: linear-gradient(to bottom, #EEF2FF 0%, #ffffff 70%);
     }
+    .shop-card {
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      border: 1px solid #E2E8F0;
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .shop-card:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transform: translateY(-2px);
+    }
     .card-glow:hover {
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
@@ -225,170 +234,201 @@
         <h2 class="text-3xl sm:text-4xl font-bold text-slate-800 mb-4">Pick your blueprint</h2>
         <p class="text-slate-500 text-lg max-w-xl mx-auto">Every tier delivers a custom strategy document. Higher tiers include implementation.</p>
       </div>
-      <div class="grid lg:grid-cols-3 gap-8 items-start">
+      <!-- Consulting Cards -->
+      <div class="grid lg:grid-cols-3 gap-6">
 
         <!-- Roadmap -->
-        <div class="bg-white border border-slate-200 rounded-2xl p-8 card-glow transition-all duration-200">
-          <div class="mb-6">
-            <p class="text-slate-500 text-sm font-semibold uppercase tracking-wider mb-2">Roadmap</p>
-            <div class="flex items-end gap-2 mb-4">
-              <span class="text-5xl font-black text-slate-800">$497</span>
+        <div class="bg-white rounded-2xl overflow-hidden flex flex-col shop-card">
+          <div class="bg-indigo-50 px-6 pt-6 pb-5 border-b border-slate-100">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600">
+                📋 Consulting · Strategy
+              </span>
+              <span class="text-xs text-slate-400">90 min</span>
             </div>
-            <p class="text-slate-500 text-sm leading-relaxed">A clear AI strategy for your business. Perfect for owners who want to know what to do — then handle it themselves or hire help.</p>
+            <div class="text-4xl font-black text-indigo-600 leading-none mb-1">$497</div>
+            <div class="text-xs text-slate-400 font-medium mt-1">one-time · video call</div>
           </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              90-minute strategy session (video call)
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Custom AI operations blueprint (PDF)
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Tool recommendations for your stack
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Quick wins list (implement this week)
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              ROI projections for your business
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Industry-specific prompt playbook
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              48-hour follow-up Q&A (async)
-            </li>
-          </ul>
-          <a href="https://calendly.com/terraloam-eye/agent-consulting" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 border border-slate-200 hover:border-slate-300 text-slate-700 font-semibold px-6 py-3.5 rounded-xl transition-all duration-150">
-            Get Your Roadmap →
-          </a>
+          <div class="px-6 pt-5 flex-1 flex flex-col">
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Roadmap</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-5">A clear AI strategy for your business. Know exactly what to automate, what tools to use, and in what order — custom-built for your workflows.</p>
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>90-minute strategy session (video call)</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Custom AI operations blueprint (PDF)</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Tool recommendations for your stack</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Quick wins list (implement this week)</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>ROI projections for your business</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Industry-specific prompt playbook</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>48-hour follow-up Q&amp;A (async)</li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://calendly.com/terraloam-eye/agent-consulting" target="_blank" rel="noopener"
+               class="w-full inline-flex items-center justify-center bg-white hover:bg-indigo-600 hover:text-white border-2 border-indigo-200 hover:border-indigo-600 text-indigo-600 font-semibold px-6 py-3 rounded-xl transition-all duration-150">
+              Book Roadmap Session →
+            </a>
+          </div>
         </div>
 
         <!-- Roadmap + Build (POPULAR) -->
-        <div class="bg-white border border-indigo-300 rounded-2xl p-8 popular-glow relative lg:-mt-4 lg:pb-12">
-          <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-            <span class="bg-indigo-600 text-white text-xs font-black uppercase tracking-widest px-4 py-1.5 rounded-full">Most Popular</span>
+        <div class="bg-white rounded-2xl overflow-hidden flex flex-col relative" style="box-shadow: 0 4px 20px rgba(79,70,229,0.18); border: 2px solid #6366f1;">
+          <div class="absolute top-0 right-0">
+            <span class="bg-indigo-600 text-white text-xs font-black uppercase tracking-widest px-3 py-1.5 rounded-bl-xl">Most Popular</span>
           </div>
-          <div class="mb-6">
-            <p class="text-indigo-600 text-sm font-semibold uppercase tracking-wider mb-2">Roadmap + Build</p>
-            <div class="flex items-end gap-2 mb-4">
-              <span class="text-5xl font-black text-slate-800">$997</span>
+          <div class="bg-indigo-600 px-6 pt-6 pb-5 border-b border-indigo-500">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 bg-indigo-500 border border-indigo-400 rounded-full px-3 py-1 text-xs font-semibold text-white">
+                🔧 Consulting · Strategy + Build
+              </span>
             </div>
-            <p class="text-slate-500 text-sm leading-relaxed">Strategy plus hands-on implementation. We don't just tell you what to do — we build your first AI workflow and hand you the keys.</p>
+            <div class="text-4xl font-black text-white leading-none mb-1">$997</div>
+            <div class="text-xs text-indigo-200 font-medium mt-1">one-time · session + build</div>
           </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Everything in Roadmap
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              We build your first AI workflow
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Workflow setup + training walkthrough
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Custom automation templates
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Plain-language implementation guide
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              7-day async support
-            </li>
-          </ul>
-          <a href="https://calendly.com/terraloam-eye/agent-consulting" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3.5 rounded-xl transition-all duration-150 shadow-lg shadow-indigo-500/25">
-            Get Roadmap + Build →
-          </a>
+          <div class="px-6 pt-5 flex-1 flex flex-col">
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Roadmap + Build</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-5">Strategy plus hands-on implementation. We don't just tell you what to do — we build your first AI workflow and hand you the keys.</p>
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Everything in Roadmap</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>We build your first AI workflow</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Workflow setup + training walkthrough</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Custom automation templates</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Plain-language implementation guide</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>7-day async support</li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://calendly.com/terraloam-eye/agent-consulting" target="_blank" rel="noopener"
+               class="w-full inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-3 rounded-xl transition-all duration-150 shadow-lg shadow-indigo-500/20">
+              Book Roadmap + Build →
+            </a>
+          </div>
         </div>
 
         <!-- Full Operations -->
-        <div class="bg-white border border-slate-200 rounded-2xl p-8 card-glow transition-all duration-200">
-          <div class="mb-6">
-            <p class="text-slate-500 text-sm font-semibold uppercase tracking-wider mb-2">Full Operations</p>
-            <div class="flex items-end gap-2 mb-4">
-              <span class="text-5xl font-black text-slate-800">$1,997</span>
+        <div class="bg-white rounded-2xl overflow-hidden flex flex-col shop-card">
+          <div class="bg-indigo-50 px-6 pt-6 pb-5 border-b border-slate-100">
+            <div class="flex items-center justify-between mb-4">
+              <span class="inline-flex items-center gap-1.5 bg-white border border-slate-200 rounded-full px-3 py-1 text-xs font-semibold text-slate-600">
+                🚀 Consulting · Full Deploy
+              </span>
+              <span class="text-xs text-slate-400">30 days</span>
             </div>
-            <p class="text-slate-500 text-sm leading-relaxed">A full month of AI implementation for your business. We build, you manage. Multiple workflows, team training, ongoing support.</p>
+            <div class="text-4xl font-black text-indigo-600 leading-none mb-1">$1,997</div>
+            <div class="text-xs text-slate-400 font-medium mt-1">one-time · full month</div>
           </div>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Everything in Roadmap + Build
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Full month of implementation
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              3–5 custom AI workflows built
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Team training session (up to 8 people)
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              2× strategy calls (kickoff + review)
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Team playbook + SOPs
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              30-day async support
-            </li>
-            <li class="flex items-start gap-3 text-sm text-slate-600">
-              <span class="text-indigo-600 mt-0.5 flex-shrink-0">✓</span>
-              Priority scheduling
-            </li>
-          </ul>
-          <a href="https://calendly.com/terraloam-eye/agent-consulting" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center bg-slate-100 hover:bg-slate-200 border border-slate-200 hover:border-slate-300 text-slate-700 font-semibold px-6 py-3.5 rounded-xl transition-all duration-150">
-            Get Full Operations →
-          </a>
+          <div class="px-6 pt-5 flex-1 flex flex-col">
+            <h3 class="text-lg font-bold text-slate-800 mb-2">Full Operations</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-5">A full month of AI implementation for your business. We build, you manage. Multiple workflows, team training, and ongoing support.</p>
+            <ul class="space-y-2 mb-6 flex-1">
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Everything in Roadmap + Build</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Full month of implementation</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>3–5 custom AI workflows built</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Team training session (up to 8 people)</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>2× strategy calls (kickoff + review)</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Team playbook + SOPs</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>30-day async support</li>
+              <li class="flex items-start gap-2 text-sm text-slate-600"><span class="text-indigo-500 mt-0.5 flex-shrink-0">✓</span>Priority scheduling</li>
+            </ul>
+          </div>
+          <div class="px-6 pb-6">
+            <a href="https://calendly.com/terraloam-eye/agent-consulting" target="_blank" rel="noopener"
+               class="w-full inline-flex items-center justify-center bg-white hover:bg-indigo-600 hover:text-white border-2 border-indigo-200 hover:border-indigo-600 text-indigo-600 font-semibold px-6 py-3 rounded-xl transition-all duration-150">
+              Book Full Operations →
+            </a>
+          </div>
         </div>
 
       </div>
 
       <!-- Digital Products -->
-      <div class="mt-16 text-center">
-        <h3 class="text-xl font-bold text-slate-800 mb-2">Just want the templates?</h3>
-        <p class="text-slate-500 mb-8">Self-serve digital products — download instantly, no call needed.</p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-          <a href="https://buy.stripe.com/7sY00c2qE5Rf1dJacL2Nq07" target="_blank" rel="noopener" class="bg-white border border-slate-200 rounded-xl p-5 card-glow transition-all duration-200 text-left hover:border-indigo-300">
-            <p class="text-slate-800 font-semibold text-sm mb-1">Blueprint DIY</p>
-            <p class="text-slate-400 text-xs mb-3">AI operations template kit</p>
-            <p class="text-indigo-600 font-bold">$49</p>
-          </a>
-          <a href="https://buy.stripe.com/6oUbIU2qEa7vf4zet12Nq0a" target="_blank" rel="noopener" class="bg-white border border-slate-200 rounded-xl p-5 card-glow transition-all duration-200 text-left hover:border-indigo-300">
-            <p class="text-slate-800 font-semibold text-sm mb-1">Content Pipeline</p>
-            <p class="text-slate-400 text-xs mb-3">AI content workflow templates</p>
-            <p class="text-indigo-600 font-bold">$79</p>
-          </a>
-          <a href="https://buy.stripe.com/aFa4gsc1eenL6y3et12Nq08" target="_blank" rel="noopener" class="bg-white border border-slate-200 rounded-xl p-5 card-glow transition-all duration-200 text-left hover:border-indigo-300">
-            <p class="text-slate-800 font-semibold text-sm mb-1">SafeSpace Template</p>
-            <p class="text-slate-400 text-xs mb-3">Civic tool starter kit</p>
-            <p class="text-indigo-600 font-bold">$99</p>
-          </a>
-          <a href="https://buy.stripe.com/eVqeV63uI7ZnaOj5Wv2Nq09" target="_blank" rel="noopener" class="bg-white border border-slate-200 rounded-xl p-5 card-glow transition-all duration-200 text-left hover:border-indigo-300">
-            <p class="text-slate-800 font-semibold text-sm mb-1">CEO Stack</p>
-            <p class="text-slate-400 text-xs mb-3">AI executive dashboard</p>
-            <p class="text-indigo-600 font-bold">$149</p>
-          </a>
+      <div class="mt-16">
+        <div class="flex items-center gap-4 mb-8">
+          <h3 class="text-xl font-bold text-slate-800 whitespace-nowrap">Just want the templates?</h3>
+          <div class="flex-1 h-px bg-slate-200"></div>
+          <span class="text-sm text-slate-400 whitespace-nowrap">Instant download</span>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <div class="bg-white rounded-xl overflow-hidden flex flex-col shop-card">
+            <div class="bg-indigo-50 px-4 pt-4 pb-3 border-b border-slate-100">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center bg-white border border-slate-200 rounded-full px-2.5 py-0.5 text-xs font-semibold text-slate-500">📦 Digital</span>
+              </div>
+              <div class="text-3xl font-black text-indigo-600">$49</div>
+              <div class="text-xs text-slate-400 mt-0.5">instant download</div>
+            </div>
+            <div class="px-4 pt-4 flex-1 flex flex-col">
+              <p class="font-bold text-slate-800 text-sm mb-1">Blueprint DIY</p>
+              <p class="text-slate-400 text-xs leading-relaxed flex-1 mb-4">Complete AI operations template kit. Map, prioritize, and implement without a strategy call.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <a href="https://buy.stripe.com/7sY00c2qE5Rf1dJacL2Nq07" target="_blank" rel="noopener"
+                 class="w-full inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-4 py-2.5 rounded-lg transition-colors duration-150">
+                Buy Now →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl overflow-hidden flex flex-col shop-card">
+            <div class="bg-indigo-50 px-4 pt-4 pb-3 border-b border-slate-100">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center bg-white border border-slate-200 rounded-full px-2.5 py-0.5 text-xs font-semibold text-slate-500">📦 Digital</span>
+              </div>
+              <div class="text-3xl font-black text-indigo-600">$79</div>
+              <div class="text-xs text-slate-400 mt-0.5">instant download</div>
+            </div>
+            <div class="px-4 pt-4 flex-1 flex flex-col">
+              <p class="font-bold text-slate-800 text-sm mb-1">Content Pipeline</p>
+              <p class="text-slate-400 text-xs leading-relaxed flex-1 mb-4">Multi-agent writing pipeline templates. Research, draft, edit, publish — with brand voice system.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <a href="https://buy.stripe.com/6oUbIU2qEa7vf4zet12Nq0a" target="_blank" rel="noopener"
+                 class="w-full inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-4 py-2.5 rounded-lg transition-colors duration-150">
+                Buy Now →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl overflow-hidden flex flex-col shop-card">
+            <div class="bg-indigo-50 px-4 pt-4 pb-3 border-b border-slate-100">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center bg-white border border-slate-200 rounded-full px-2.5 py-0.5 text-xs font-semibold text-slate-500">📦 Digital</span>
+              </div>
+              <div class="text-3xl font-black text-indigo-600">$99</div>
+              <div class="text-xs text-slate-400 mt-0.5">instant download</div>
+            </div>
+            <div class="px-4 pt-4 flex-1 flex flex-col">
+              <p class="font-bold text-slate-800 text-sm mb-1">SafeSpace Template</p>
+              <p class="text-slate-400 text-xs leading-relaxed flex-1 mb-4">AI-assisted civic tool starter kit. Anonymous reporting, landlord accountability, renter protection.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <a href="https://buy.stripe.com/aFa4gsc1eenL6y3et12Nq08" target="_blank" rel="noopener"
+                 class="w-full inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-4 py-2.5 rounded-lg transition-colors duration-150">
+                Buy Now →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl overflow-hidden flex flex-col shop-card">
+            <div class="bg-indigo-50 px-4 pt-4 pb-3 border-b border-slate-100">
+              <div class="flex items-center justify-between mb-3">
+                <span class="inline-flex items-center bg-white border border-slate-200 rounded-full px-2.5 py-0.5 text-xs font-semibold text-slate-500">📦 Digital</span>
+              </div>
+              <div class="text-3xl font-black text-indigo-600">$149</div>
+              <div class="text-xs text-slate-400 mt-0.5">instant download</div>
+            </div>
+            <div class="px-4 pt-4 flex-1 flex flex-col">
+              <p class="font-bold text-slate-800 text-sm mb-1">CEO Stack</p>
+              <p class="text-slate-400 text-xs leading-relaxed flex-1 mb-4">AI executive dashboard with token efficiency patterns, model routing, and prompt compression guides.</p>
+            </div>
+            <div class="px-4 pb-4">
+              <a href="https://buy.stripe.com/eVqeV63uI7ZnaOj5Wv2Nq09" target="_blank" rel="noopener"
+                 class="w-full inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm px-4 py-2.5 rounded-lg transition-colors duration-150">
+                Buy Now →
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
